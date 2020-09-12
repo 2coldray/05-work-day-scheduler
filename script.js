@@ -39,13 +39,7 @@ if (textOne < sampleHour) {
     console.log(textOne.addClass("future"));
 };
 
-// //Setting local storage
-// $(".saveBtn").on("click", function() {
-//     console.log("I've been clicked");
-//     localStorage.setItem("event", JSON.stringify({
-//         'text9': $("#text9").val()
-// }))
-
+//Setting local storage
 $("#save9").on("click", function() {
     console.log("Ive been clicked")
     localStorage.setItem("9AM", $("#text9").val().trim())
@@ -91,6 +85,15 @@ $("#save17").on("click", function() {
     localStorage.setItem("5PM", $("#text17").val().trim())
 });
 
-
+//Access local storage
+$("#text9").val(localStorage.getItem("9AM"));
+$("#text10").val(localStorage.getItem("10AM"));
+$("#text11").val(localStorage.getItem("11AM"));
+$("#text12").val(localStorage.getItem("12PM"));
+$("#text13").val(localStorage.getItem("1PM"));
+$("#text14").val(localStorage.getItem("2PM"));
+$("#text15").val(localStorage.getItem("3PM"));
+$("#text16").val(localStorage.getItem("4PM"));
+$("#text17").val(localStorage.getItem("5PM"));
 
 });
