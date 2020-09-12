@@ -15,9 +15,9 @@ var sampleHour = moment().format("H")
 
 //Display currentTime to Page
 // $("#currentTime").text(currentTime);
-console.log(currentTime);
-console.log(currentHour);
-console.log(sampleHour);
+// console.log(currentTime);
+// console.log(currentHour);
+// console.log(sampleHour);
 
 //Set times to text elements
 var nine = $("#text9");
