@@ -9,6 +9,11 @@ $("#currentDay").text(now);
 
 //Make variable for current hour
 var currentHour = moment().format("HH");
+var currentTime = moment().format("h:mm A");
+
+//Display currentTime to Page
+$("#currentTime").text(currentTime);
+console.log(currentTime);
 console.log(currentHour);
 
 //Make an array of all the hours
