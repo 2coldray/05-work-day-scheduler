@@ -9,7 +9,7 @@ $("#currentDay").text(now);
 //===============================================
 
 //Make variable for current hour
-var currentHour = moment().format("HH");
+var currentHour = moment().hour();
 var currentTime = moment().format("h:mm A");
 var sampleHour = moment().format("H")
 
@@ -19,25 +19,43 @@ console.log(currentTime);
 console.log(currentHour);
 console.log(sampleHour);
 
-//Make an array of all the hours 
-var workHours = [9, 10, 11, 12, 13, 14, 15, 16, 17];
+//Set times to text elements
+var nine = $("#text9");
+nine = 9;
+var ten = $("#text10");
+ten = 10;
 
-//Apply future class to the textarea
-// $("textarea").addClass("future");
-// $("textarea").addClass("future");
-
-// for (var i = 0; i < workHours.length; i++) {
-//     console.log(workHours[i]);
-// }
-var textOne = $("#text9").attr("hour", workHours[0]);
-
-if (textOne < sampleHour) {
-    console.log(textOne.addClass("past"));
-} else if (textOne == sampleHour) {
-    console.log(textOne.addClass("present"));
+if (currentHour > nine) {
+    $("#text9").addClass("past")
+} else if (currentHour == nine) {
+    $("#text9").addClass("present")
 } else {
-    console.log(textOne.addClass("future"));
+    $("#text9").addClass("future")
 };
+
+if (currentHour > ten) {
+    $("#text10").addClass("past");
+} else if (currentHour == ten) {
+    $("#text10").addClass("present");
+} else {
+    $("#text10").addClass("future");
+}
+
+
+
+
+// Make an array of all the hours 
+// var workHours = [9, 10, 11, 12, 13, 14, 15, 16, 17];
+
+// var textOne = $("#text9").attr("hour", workHours[0]);
+
+// if (textOne < sampleHour) {
+//     console.log(textOne.addClass("past"));
+// } else if (textOne == sampleHour) {
+//     console.log(textOne.addClass("present"));
+// } else {
+//     console.log(textOne.addClass("future"));
+// };
 
 //Setting local storage
 $("#save9").on("click", function() {
