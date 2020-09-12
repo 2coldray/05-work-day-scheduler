@@ -15,7 +15,7 @@ The WorkDay Scheduler is a calendar application where user's can organize and ke
 
 ## Installation
 
-1. To use the application, go the website:
+1. To use the application, go the website: https://2coldray.github.io/05-work-day-scheduler/ .
 2. Type text into the boxes to log an activity.
 3. Click the save button to save the text.
 
