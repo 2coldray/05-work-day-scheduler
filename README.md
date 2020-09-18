@@ -31,6 +31,12 @@ The WorkDay Scheduler is a calendar application where user's can organize and ke
 
 I used the moment.js documentation for time formatting: https://momentjs.com/docs/ . I also talked through hard coding the local storage, and assigning the past, present, and future classes to the textarea boxes on discord in a study group.
 
+Contact Information for Rayshawn Bray
+
+Email: raybray219@yahoo.com
+LinkedIn: www.linkedin.com/in/rayshawnbray
+Github: https://github.com/2coldray
+
 ## License
 
 MIT License
